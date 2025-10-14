@@ -1,0 +1,10 @@
+# Source: https://www.youtube.com/watch?v=ZzA0H4Sv3a8
+# Role: warehouse_ops
+# Topic: Emergency Response, Evacuation
+
+Upon hearing the alarm, don PPE and move quickly to the exit. 
+Check your zone for anyone left behind. 
+Back off twenty meters from the structure and wait at the muster point. 
+Alert the safety officer upon arrival. 
+Do not re-enter the building until authorized. 
+Verify attendance before resuming operations.

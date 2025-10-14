@@ -1,0 +1,20 @@
+{
+  "verb_to_region": {
+    "don": "Hippocampus",
+    "verify": "Hippocampus",
+    "check": "Hippocampus",
+    "ventilate": "PFC",
+    "open": "PFC",
+    "evacuate": "Amygdala",
+    "back": "Amygdala",
+    "alert": "PFC",
+    "weigh": "OFC"
+  },
+  "tradeoffs": [
+    {
+      "name": "vent_vs_egress",
+      "signals": ["ventilate", "evacuate"],
+      "default_weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "au_id": "AU-dc900965",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "gloves"
+    }
+  },
+  {
+    "au_id": "AU-05bf9908",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "scba"
+    }
+  },
+  {
+    "au_id": "AU-83fa3cc1",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "gloves"
+    }
+  },
+  {
+    "au_id": "AU-cc5dcda6",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "gloves"
+    }
+  },
+  {
+    "au_id": "AU-696016d1",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "gloves"
+    }
+  },
+  {
+    "au_id": "AU-e92b0a7e",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "gloves"
+    }
+  },
+  {
+    "au_id": "AU-205687ff",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "scba"
+    }
+  },
+  {
+    "au_id": "AU-51c57033",
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "gloves"
+    }
+  }
+]

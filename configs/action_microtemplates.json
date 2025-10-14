@@ -1,0 +1,27 @@
+{
+  "VERIFY_PPE": {
+    "op": "VERIFY_PPE",
+    "params": {
+      "item": "<ppe_item>"
+    }
+  },
+  "VENTILATE_HIGH": {
+    "op": "VENTILATE",
+    "params": {
+      "intensity": "high",
+      "duration_s": [90, 180]
+    }
+  },
+  "BACKOFF_20M": {
+    "op": "BACK_OFF",
+    "params": {
+      "meters": 20
+    }
+  },
+  "CALL_OUT": {
+    "op": "ALERT_SUPERVISOR",
+    "params": {
+      "channel": "ops_radio"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Capsule Cortex Schema",
+  "type": "object",
+  "required": ["role", "cortex_id", "regions", "micro_steps", "mappings", "governance"],
+  "properties": {
+    "role": { "type": "string" },
+    "cortex_id": { "type": "string" },
+    "regions": {
+      "type": "object",
+      "required": ["Hippocampus", "Amygdala", "OFC", "PFC"],
+      "properties": {
+        "Hippocampus": {
+          "type": "object",
+          "properties": {
+            "episodic_sequences": { "type": "array", "items": { "type": "string" } },
+            "recency_bias": { "type": "number" }
+          },
+          "required": ["episodic_sequences"]
+        },
+        "Amygdala": {
+          "type": "object",
+          "properties": {
+            "risk_heuristics": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "scent_id": { "type": "string" },
+                  "ppm_gte": { "type": "number" },
+                  "risk": { "type": "string" },
+                  "response": { "type": "string" }
+                },
+                "required": ["scent_id", "risk"]
+              }
+            }
+          }
+        },
+        "OFC": {
+          "type": "object",
+          "properties": {
+            "tradeoffs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "weight": { "type": "number" }
+                },
+                "required": ["name", "weight"]
+              }
+            }
+          }
+        },
+        "PFC": {
+          "type": "object",
+          "properties": {
+            "planning_templates": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "OlfactoryCortex": {
+          "type": "object",
+          "properties": {
+            "cue_binding": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "class": { "type": "string" },
+                  "cue_nodes": { "type": "array", "items": { "type": "string" } }
+                },
+                "required": ["class", "cue_nodes"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "micro_steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "op", "params"],
+        "properties": {
+          "id": { "type": "string" },
+          "op": { "type": "string" },
+          "params": { "type": "object" },
+          "time_s": { "type": "number" }
+        }
+      }
+    },
+    "mappings": {
+      "type": "object",
+      "required": ["scenarios", "skillgraph_links"],
+      "properties": {
+        "scenarios": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } },
+        "skillgraph_links": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "required": ["sandbox", "version", "firewall_checked"],
+      "properties": {
+        "sandbox": { "type": "boolean" },
+        "version": { "type": "string" },
+        "firewall_checked": { "type": "boolean" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Action Unit (AU) Segment Schema",
+  "type": "object",
+  "required": [
+    "au_id",
+    "source_id",
+    "t_start_s",
+    "t_end_s",
+    "utterance",
+    "tags",
+    "entities",
+    "confidence"
+  ],
+  "properties": {
+    "au_id": {
+      "type": "string",
+      "pattern": "^AU-[a-f0-9]+$",
+      "description": "Unique Action Unit identifier"
+    },
+    "source_id": {
+      "type": "string",
+      "description": "Reference to source transcript (yt:ID or doc:ID)"
+    },
+    "t_start_s": { "type": "number", "minimum": 0 },
+    "t_end_s": { "type": "number", "minimum": 0 },
+    "utterance": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "High-level tags (PPE, VENTILATION, CHECK)"
+    },
+    "entities": {
+      "type": "object",
+      "properties": {
+        "ppe": { "type": "array", "items": { "type": "string" } },
+        "device": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "preconditions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Conditions required before action"
+    },
+    "postconditions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Expected outcomes after action"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "additionalProperties": false
+}

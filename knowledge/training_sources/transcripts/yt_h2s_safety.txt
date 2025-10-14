@@ -1,0 +1,11 @@
+# Source: https://www.youtube.com/watch?v=kv6e9btZc7I
+# Role: warehouse_ops
+# Topic: H2S, PPE, Ventilation
+
+Before entering the work area, check for H2S warning signage. 
+Don the respirator_p100 and verify its seal. 
+Open the ventilation system before any inspection begins. 
+Check the detector reading — if above 10 ppm, evacuate the area immediately. 
+Alert the supervisor of elevated gas levels and wait for clearance. 
+Verify ventilation remains active throughout the procedure. 
+Do not remove PPE until readings return to safe levels.

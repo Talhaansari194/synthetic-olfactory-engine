@@ -1,0 +1,1 @@
+{"timestamp": 1760403367.2865012, "packet": {"gas": "CH4", "ppm": 123}, "executed": ["PRECHECK_PPE", "VERIFY_VENTILATION", "BACKOFF_10M", "ALERT_SUPERVISOR"]}

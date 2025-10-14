@@ -1,0 +1,10 @@
+# Source: https://www.youtube.com/watch?v=Ioc5G5XhPjs
+# Role: warehouse_ops
+# Topic: PPE, General Safety
+
+Before beginning work, verify all PPE components are available. 
+Check gloves, goggles, and respirator_p100 filters for defects. 
+Don PPE following the sequence: gloves, respirator, goggles, vest. 
+Verify that ventilation is operational before using solvents. 
+Alert your supervisor if any PPE item is damaged or missing. 
+Close all tools and isolate power after completing the shift.

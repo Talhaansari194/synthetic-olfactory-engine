@@ -1,0 +1,28 @@
+{
+  "imperative_verbs": [
+    "check",
+    "verify",
+    "don",
+    "open",
+    "close",
+    "evacuate",
+    "alert",
+    "ventilate",
+    "isolate",
+    "shut"
+  ],
+  "ppe_lexicon": [
+    "respirator_p100",
+    "scba",
+    "gloves",
+    "goggles"
+  ],
+  "duration_patterns": [
+    "for (\\d+)(s|sec|seconds|m|min|minutes)"
+  ],
+  "distance_patterns": [
+    "(\\d+)(m|meters|ft|feet)"
+  ],
+  "merge_min_sec": 2.0,
+  "au_confidence_floor": 0.6
+}

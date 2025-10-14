@@ -1,0 +1,79 @@
+{
+  "yt_material_handling_safety.txt": [
+    "Before lifting materials, verify that the route is free of obstacles",
+    "Don gloves and safety boots",
+    "Check hoist straps and forklifts for defects",
+    "Open the ventilation fans to reduce dust",
+    "Alert maintenance if any malfunction occurs",
+    "Close and secure equipment after use"
+  ],
+  "yt_methane_response.txt": [
+    "When the methane alarm activates, verify your PPE immediately",
+    "Don the SCBA and check that your air supply valve is open",
+    "Check the surrounding zone for other personnel",
+    "Open both ventilation fans to high speed for two minutes",
+    "Alert the control room using the radio"
+  ],
+  "yt_fire_safety_training.txt": [
+    "Check that fire extinguishers are inspected and pressurized",
+    "Verify that emergency exits are clear",
+    "Don flame resistant gloves before handling flammable materials",
+    "Alert others immediately if smoke is detected",
+    "Open ventilation to remove fumes",
+    "Evacuate and call the fire team if flames persist"
+  ],
+  "yt_h2s_safety.txt": [
+    "Before entering the work area, check for H2S warning signage",
+    "Don the respirator p100 and verify its seal",
+    "Open the ventilation system before any inspection begins",
+    "Check the detector reading if above 10 ppm, evacuate the area immediately",
+    "Alert the supervisor of elevated gas levels and wait for clearance",
+    "Verify ventilation remains active throughout the procedure"
+  ],
+  "yt_warehouse_ventilation.txt": [
+    "Before starting ventilation, check air monitors for safe oxygen levels",
+    "Open all bay doors and turn on the exhaust fan",
+    "Ventilate the area for at least 120 seconds before entry",
+    "Verify airflow direction with the handheld anemometer",
+    "If readings remain high, alert maintenance immediately",
+    "Close ventilation once air quality readings normalize"
+  ],
+  "yt_emergency_drill.txt": [
+    "Upon hearing the alarm, don PPE and move quickly to the exit",
+    "Check your zone for anyone left behind",
+    "Alert the safety officer upon arrival",
+    "Verify attendance before resuming operations"
+  ],
+  "yt_electrical_panel_safety.txt": [
+    "Check that electrical panels are properly labeled",
+    "Verify that the lockout procedure is engaged before touching conductors",
+    "Don insulated gloves and a face shield",
+    "Open the panel carefully and inspect for loose wiring",
+    "Alert electrical maintenance if arcing or burning odor is detected",
+    "Close and secure the panel after inspection"
+  ],
+  "yt_general_ppe_training.txt": [
+    "Before beginning work, verify all PPE components are available",
+    "Check gloves, goggles, and respirator p100 filters for defects",
+    "Don PPE following the sequence gloves, respirator, goggles, vest",
+    "Verify that ventilation is operational before using solvents",
+    "Alert your supervisor if any PPE item is damaged or missing",
+    "Close all tools and isolate power after completing the shift"
+  ],
+  "yt_confined_space_entry.txt": [
+    "Before entry, check oxygen and toxic gas levels with a monitor",
+    "Don the SCBA if readings are below acceptable limits",
+    "Open the ventilation blower and run it for at least two minutes",
+    "Verify continuous radio contact with the attendant",
+    "Alert the rescue team if conditions change abruptly",
+    "Close the entry point and record completion in the logbook"
+  ],
+  "yt_lockout_tagout.txt": [
+    "Before performing maintenance, verify that all power is isolated",
+    "Don gloves, goggles, and steel toe boots",
+    "Check for stored energy in hydraulic and pneumatic lines",
+    "Close the main disconnect and apply your lockout tag",
+    "Verify that all energy sources are labeled and locked",
+    "Alert your supervisor before testing"
+  ]
+}

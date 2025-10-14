@@ -1,0 +1,11 @@
+# Source: https://www.youtube.com/watch?v=yxdPyU9Z-mg
+# Role: warehouse_ops
+# Topic: Lockout/Tagout (LOTO), Equipment Safety
+
+Before performing maintenance, verify that all power is isolated. 
+Don gloves, goggles, and steel-toe boots. 
+Check for stored energy in hydraulic and pneumatic lines. 
+Close the main disconnect and apply your lockout tag. 
+Verify that all energy sources are labeled and locked. 
+Alert your supervisor before testing. 
+After work, remove locks and restore power safely.

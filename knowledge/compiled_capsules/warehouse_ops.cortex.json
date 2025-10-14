@@ -1,0 +1,215 @@
+{
+  "role": "warehouse_ops",
+  "cortex_id": "CTX-WAREHOUSE-OPS-v1",
+  "regions": {
+    "Hippocampus": {
+      "episodic_sequences": [
+        "AU-c0686106",
+        "AU-dc900965",
+        "AU-6979a3ff",
+        "AU-7ca3cfd6",
+        "AU-a7d843e5",
+        "AU-8f238285",
+        "AU-3c04c74c",
+        "AU-05bf9908",
+        "AU-a6e47a16",
+        "AU-d2c9e0b0",
+        "AU-e8920095",
+        "AU-d7cbbec1",
+        "AU-f746b3f5",
+        "AU-83fa3cc1",
+        "AU-621b8c30",
+        "AU-e34def47",
+        "AU-b577d743",
+        "AU-48e36fad",
+        "AU-f714124c",
+        "AU-bc3a6905",
+        "AU-fa5960a6",
+        "AU-a6e679c7",
+        "AU-7c320ec7",
+        "AU-11c223a4",
+        "AU-92300f45",
+        "AU-4cc497dd",
+        "AU-ef100db6",
+        "AU-6085b3b1",
+        "AU-64471bd2",
+        "AU-4d659ca2",
+        "AU-30cf2783",
+        "AU-0b487dfb",
+        "AU-b05a407b",
+        "AU-9755c313",
+        "AU-5f1e3848",
+        "AU-cc5dcda6",
+        "AU-926f2ca2",
+        "AU-e81c6490",
+        "AU-f157a55b",
+        "AU-5ae40844",
+        "AU-696016d1",
+        "AU-e92b0a7e",
+        "AU-44736953",
+        "AU-892234fe",
+        "AU-c5e57254",
+        "AU-9d63ca31",
+        "AU-205687ff",
+        "AU-8a1306f4",
+        "AU-fa1479c8",
+        "AU-e8ca8d52",
+        "AU-a9329043",
+        "AU-472a0aaa",
+        "AU-51c57033",
+        "AU-85763609",
+        "AU-3b46ca01",
+        "AU-02f652b2",
+        "AU-afc35130"
+      ],
+      "recency_bias": 0.7
+    },
+    "Amygdala": {
+      "risk_heuristics": [
+        {
+          "scent_id": "H2S-SUL-003",
+          "ppm_gte": 10,
+          "risk": "high",
+          "response": "evacuate_area"
+        },
+        {
+          "scent_id": "METHANE-CH4-007",
+          "ppm_gte": 25,
+          "risk": "medium",
+          "response": "ventilate_and_alert"
+        }
+      ]
+    },
+    "OFC": {
+      "tradeoffs": [
+        {
+          "name": "vent_vs_egress",
+          "weight": 0.6
+        },
+        {
+          "name": "speed_vs_safety",
+          "weight": 0.4
+        }
+      ]
+    },
+    "PFC": {
+      "planning_templates": [
+        "AU-c0686106",
+        "AU-dc900965",
+        "AU-6979a3ff",
+        "AU-7ca3cfd6",
+        "AU-a7d843e5",
+        "AU-8f238285",
+        "AU-3c04c74c",
+        "AU-05bf9908",
+        "AU-a6e47a16",
+        "AU-d2c9e0b0",
+        "AU-e8920095",
+        "AU-d7cbbec1",
+        "AU-f746b3f5",
+        "AU-83fa3cc1",
+        "AU-621b8c30",
+        "AU-e34def47",
+        "AU-b577d743",
+        "AU-48e36fad",
+        "AU-f714124c",
+        "AU-bc3a6905",
+        "AU-fa5960a6",
+        "AU-a6e679c7",
+        "AU-7c320ec7",
+        "AU-11c223a4",
+        "AU-92300f45",
+        "AU-4cc497dd",
+        "AU-ef100db6",
+        "AU-6085b3b1",
+        "AU-64471bd2",
+        "AU-4d659ca2",
+        "AU-30cf2783",
+        "AU-0b487dfb",
+        "AU-b05a407b",
+        "AU-9755c313",
+        "AU-5f1e3848",
+        "AU-cc5dcda6",
+        "AU-926f2ca2",
+        "AU-e81c6490",
+        "AU-f157a55b",
+        "AU-5ae40844",
+        "AU-696016d1",
+        "AU-e92b0a7e",
+        "AU-44736953",
+        "AU-892234fe",
+        "AU-c5e57254",
+        "AU-9d63ca31",
+        "AU-205687ff",
+        "AU-8a1306f4",
+        "AU-fa1479c8",
+        "AU-e8ca8d52",
+        "AU-a9329043",
+        "AU-472a0aaa",
+        "AU-51c57033",
+        "AU-85763609",
+        "AU-3b46ca01",
+        "AU-02f652b2",
+        "AU-afc35130"
+      ]
+    },
+    "OlfactoryCortex": {
+      "cue_binding": [
+        {
+          "class": "sulfur",
+          "cue_nodes": [
+            "AU-H2S-PPE",
+            "AU-H2S-BACKOFF"
+          ]
+        },
+        {
+          "class": "methane",
+          "cue_nodes": [
+            "AU-METHANE-VENT",
+            "AU-METHANE-ALERT"
+          ]
+        },
+        {
+          "class": "smoke",
+          "cue_nodes": [
+            "AU-FIRE-ALERT",
+            "AU-FIRE-EVAC"
+          ]
+        }
+      ]
+    }
+  },
+  "micro_steps": [],
+  "mappings": {
+    "scenarios": {
+      "methane_leak_hazard": [
+        "PRECHECK_PPE",
+        "VERIFY_VENTILATION",
+        "BACKOFF_10M",
+        "ALERT_SUPERVISOR"
+      ],
+      "h2s_spike": [
+        "PRECHECK_PPE",
+        "BACKOFF_10M",
+        "ALERT_SUPERVISOR"
+      ]
+    },
+    "skillgraph_links": {
+      "VENTILATION_PROCEDURE": [
+        "VERIFY_VENTILATION"
+      ],
+      "EMERGENCY_RESPONSE": [
+        "ALERT_SUPERVISOR",
+        "BACKOFF_10M"
+      ]
+    }
+  },
+  "governance": {
+    "sandbox": true,
+    "version": "v1",
+    "created_by": "compile_capsule_traits.py",
+    "firewall_checked": true,
+    "knit_with_skillgraph": true,
+    "policy_override": null
+  }
+}

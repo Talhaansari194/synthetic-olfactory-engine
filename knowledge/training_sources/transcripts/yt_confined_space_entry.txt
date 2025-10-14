@@ -1,0 +1,10 @@
+# Source: https://www.youtube.com/watch?v=G-2v1j1DE1A
+# Role: warehouse_ops
+# Topic: Confined Space Entry, Ventilation
+
+Before entry, check oxygen and toxic gas levels with a monitor. 
+Don the SCBA if readings are below acceptable limits. 
+Open the ventilation blower and run it for at least two minutes. 
+Verify continuous radio contact with the attendant. 
+Alert the rescue team if conditions change abruptly. 
+Close the entry point and record completion in the logbook.

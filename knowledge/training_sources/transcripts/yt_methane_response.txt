@@ -1,0 +1,11 @@
+# Source: https://www.youtube.com/watch?v=0JXpOEFGkBg
+# Role: warehouse_ops
+# Topic: Methane Leak, Ventilation
+
+When the methane alarm activates, verify your PPE immediately. 
+Don the SCBA and check that your air supply valve is open. 
+Check the surrounding zone for other personnel. 
+Open both ventilation fans to high speed for two minutes. 
+Back off ten meters after initiating ventilation. 
+Alert the control room using the radio. 
+Do not re-enter until gas readings are below threshold.

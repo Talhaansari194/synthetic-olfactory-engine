@@ -1,0 +1,10 @@
+# Source: https://www.youtube.com/watch?v=HcvJ_Xp-ofo
+# Role: warehouse_ops
+# Topic: Electrical Safety, PPE
+
+Check that electrical panels are properly labeled. 
+Verify that the lockout procedure is engaged before touching conductors. 
+Don insulated gloves and a face shield. 
+Open the panel carefully and inspect for loose wiring. 
+Alert electrical maintenance if arcing or burning odor is detected. 
+Close and secure the panel after inspection.

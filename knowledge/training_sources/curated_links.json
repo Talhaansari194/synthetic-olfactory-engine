@@ -1,0 +1,16 @@
+[
+  {
+    "id": "yt_h2s_safety",
+    "type": "youtube",
+    "url": "https://www.youtube.com/watch?v=example1",
+    "topic": ["H2S", "PPE"],
+    "role": ["warehouse_ops"]
+  },
+  {
+    "id": "yt_methane_response",
+    "type": "youtube",
+    "url": "https://www.youtube.com/watch?v=example2",
+    "topic": ["Methane Leak", "Ventilation"],
+    "role": ["warehouse_ops"]
+  }
+]

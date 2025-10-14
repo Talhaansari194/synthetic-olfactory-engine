@@ -1,0 +1,10 @@
+# Source: https://www.youtube.com/watch?v=UeQbIG3DnFQ
+# Role: warehouse_ops
+# Topic: Ventilation, Air Quality
+
+Before starting ventilation, check air monitors for safe oxygen levels. 
+Open all bay doors and turn on the exhaust fan. 
+Ventilate the area for at least 120 seconds before entry. 
+Verify airflow direction with the handheld anemometer. 
+If readings remain high, alert maintenance immediately. 
+Close ventilation once air quality readings normalize.
