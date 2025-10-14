@@ -19,68 +19,66 @@ The system ingests **training media** (YouTube, OEM/OSHA videos, SOPs, manuals) 
 
 synthetic_olfactory_engine/
 │
-├── README.md                         # Full documentation (A–H summary, setup, tests)
-│
-├── __init__.py                        # Marks repo root as Python package
+├── README.md                               # Full documentation (A–H summary, setup, tests)
+├── __init__.py                             # Marks repo root as Python package
 │
 ├── services/
 │   ├── __init__.py
 │   └── capsule_learning/
 │       ├── __init__.py
-│       ├── yt_fetch_catalog.py        # Reads curated YouTube/OEM URLs → metadata
-│       ├── transcribe_media.py        # Normalizes transcripts (VTT/TXT → JSON)
-│       ├── segment_timelines.py       # Splits transcripts into Action Units (AUs)
-│       ├── extract_checklists.py      # Detects imperative steps, PPE, tool readiness
-│       ├── derive_cognitive_graph.py  # Maps AU verbs → brain regions (Amygdala/PFC/…)
-│       ├── compile_capsule_traits.py  # Compiles role-level CapsuleCortex JSON
-│       ├── validate_capsule_traits.py # Validates JSON schema, safety & governance
-│       └── knit_with_skillgraph.py    # Integrates capsules with SkillGraph edges
+│       ├── yt_fetch_catalog.py             # Reads curated YouTube/OEM URLs → metadata
+│       ├── transcribe_media.py             # Normalizes transcripts (VTT/TXT → JSON)
+│       ├── segment_timelines.py            # Splits transcripts into Action Units (AUs)
+│       ├── extract_checklists.py           # Detects imperative steps, PPE, tool readiness
+│       ├── derive_cognitive_graph.py       # Maps AU verbs → brain regions (Amygdala/PFC/…)
+│       ├── compile_capsule_traits.py       # Compiles role-level CapsuleCortex JSON
+│       ├── validate_capsule_traits.py      # Validates JSON schema, safety & governance
+│       └── knit_with_skillgraph.py         # Integrates capsules with SkillGraph edges
 │
 ├── decision_pipeline/
 │   ├── __init__.py
-│   └── action_planner.py              # Loads CapsuleCortex and runs canonical flow
+│   └── action_planner.py                   # Loads CapsuleCortex and runs canonical flow
 │
 ├── knowledge/
 │   ├── training_sources/
-│   │   ├── curated_links.json         # YouTube / OEM source links + role tags
-│   │   ├── transcripts/               # Local transcript files (.vtt / .txt / .json)
+│   │   ├── curated_links.json              # YouTube / OEM source links + role tags
+│   │   ├── transcripts/                    # Local transcript files (.vtt / .txt / .json)
 │   │   │   ├── yt_h2s_safety.json
 │   │   │   ├── yt_methane_response.json
-│   │   │   ├── ...
-│   │   └── manuals/                   # OEM / OSHA / NFPA / plant SOPs (.pdf / .txt)
+│   │   │   └── ...
+│   │   └── manuals/                        # OEM / OSHA / NFPA / plant SOPs (.pdf / .txt)
 │   │
 │   ├── compiled_capsules/
-│   │   └── warehouse_ops.cortex.json  # Final capsule output per role
+│   │   └── warehouse_ops.cortex.json       # Final capsule output per role
 │   │
-│   ├── audit_logs.jsonl               # Build + governance audit trail
-│   ├── au_segments.jsonl              # Extracted AU timeline segments
-│   └── scenario_trace.jsonl           # Planner execution trace (episodic log)
+│   ├── audit_logs.jsonl                    # Build + governance audit trail
+│   ├── au_segments.jsonl                   # Extracted AU timeline segments
+│   └── scenario_trace.jsonl                # Planner execution trace (episodic log)
 │
 ├── configs/
-│   ├── capsule_learning.json          # Lexicons & thresholds for AU segmentation
-│   ├── cognition_map.json             # Verb→region mappings, trade-off definitions
-│   └── action_microtemplates.json     # Parameter templates for micro-steps
+│   ├── capsule_learning.json               # Lexicons & thresholds for AU segmentation
+│   ├── cognition_map.json                  # Verb→region mappings, trade-off definitions
+│   └── action_microtemplates.json          # Parameter templates for micro-steps
 │
 ├── validators/
 │   ├── __init__.py
 │   └── schemas/
-│       ├── au_segment.schema.json     # JSON schema for AU segments
-│       └── capsule_cortex.schema.json # JSON schema for CapsuleCortex outputs
+│       ├── au_segment.schema.json          # JSON schema for AU segments
+│       └── capsule_cortex.schema.json      # JSON schema for CapsuleCortex outputs
 │
 ├── scripts/
-│   ├── build_capsules_from_training.sh# End-to-end pipeline (ingest→compile→validate)
-│   └── inspect_capsule.py             # Pretty-prints cortex nodes & micro-steps
+│   ├── build_capsules_from_training.sh     # End-to-end pipeline (ingest → compile → validate)
+│   └── inspect_capsule.py                  # Pretty-prints cortex nodes & micro-steps
 │
 ├── tests/
 │   ├── __init__.py
-│   ├── test_segment_timelines.py      # Unit test for AU segmentation logic
-│   ├── test_extract_checklists.py     # Unit test for checklist extraction
-│   ├── test_compile_capsule_traits.py # Validates capsule compilation & latency
-│   └── test_planner_capsule_influence.py # Verifies capsule-influenced planning
+│   ├── test_segment_timelines.py           # Unit test for AU segmentation logic
+│   ├── test_extract_checklists.py          # Unit test for checklist extraction
+│   ├── test_compile_capsule_traits.py      # Validates capsule compilation & latency
+│   └── test_planner_capsule_influence.py   # Verifies capsule-influenced planning
 │
-└── .gitignore                         # Optional (ignore __pycache__, .jsonl, etc.)
+└── .gitignore                              # Ignore __pycache__, .jsonl, logs, env files, etc.
 
----
 
 ## ⚙️ B. Data Contracts
 
